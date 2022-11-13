@@ -1,0 +1,38 @@
+pubkey: HEwB7sZMEkVboJVPjikQ1Fb3cfLrByGPUJuAyB5oP3AE
+scrap wage notice try boat canyon that volcano lonely area nose response
+------------- Hacer esto cuado acabemos la programacion ---------------
+
+Notas
+Si no funciona inicar consola como administrador
+
+• Conectarnos al DevNet y generamos nuestra clave
+    solana config set --url https://api.devnet.solana.com
+    
+
+• Crear billetera
+    solana-keygen new --force
+    Billetera para publicar
+    ☼ Hash: HEwB7sZMEkVboJVPjikQ1Fb3cfLrByGPUJuAyB5oP3AE
+    ☼ (Esta es la que no se debe anotar en ninguna parte):scrap wage notice try boat canyon that volcano lonely area nose response
+
+• Cargar dinero (Se necesita minimo 4)
+    solana airdrop 2 /*Hash de la billetera*/
+    
+• Compilar proyecto 
+    (sudo) anchor build
+
+• Keypar JSON 
+    (sudo) solana address -k /Users/Ulise/Documents/Github/calf-track/solana/target/deploy/capital_carnico-keypair.json
+
+• Program ID 
+    6c2RKWQMZ3SgmByGjDj6fhnbiUGdY3gJjQaqYcawTsEv
+    Program Id: 6c2RKWQMZ3SgmByGjDj6fhnbiUGdY3gJjQaqYcawTsEv
+
+• Sustituir en anchor.toml con capital_carnico = "Program ID"
+
+• Sustituir en lib.rs con declare_id!("Program ID")
+
+• Subir a la red de solana
+    anchor build
+    sudo anchor deploy
+    Tener fe y que no salga error

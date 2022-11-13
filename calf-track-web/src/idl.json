@@ -1,0 +1,208 @@
+{
+  "version": "0.1.0",
+  "name": "miprograma",
+  "instructions": [
+    {
+      "name": "sendPost",
+      "accounts": [
+        {
+          "name": "post",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "author",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "walletCollector",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "tip",
+          "type": "string"
+        },
+        {
+          "name": "origen",
+          "type": "string"
+        },
+        {
+          "name": "productor",
+          "type": "string"
+        },
+        {
+          "name": "siniiga",
+          "type": "i8"
+        },
+        {
+          "name": "reemo",
+          "type": "string"
+        },
+        {
+          "name": "edad",
+          "type": "i8"
+        },
+        {
+          "name": "destino",
+          "type": "string"
+        },
+        {
+          "name": "upp",
+          "type": "string"
+        },
+        {
+          "name": "psg",
+          "type": "string"
+        },
+        {
+          "name": "year",
+          "type": "u8"
+        },
+        {
+          "name": "month",
+          "type": "u8"
+        },
+        {
+          "name": "day",
+          "type": "u8"
+        },
+        {
+          "name": "hour",
+          "type": "u8"
+        },
+        {
+          "name": "minutes",
+          "type": "u8"
+        },
+        {
+          "name": "seconds",
+          "type": "u8"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Post",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "author",
+            "type": "publicKey"
+          },
+          {
+            "name": "origen",
+            "type": "string"
+          },
+          {
+            "name": "productor",
+            "type": "string"
+          },
+          {
+            "name": "siniiga",
+            "type": "i8"
+          },
+          {
+            "name": "reemo",
+            "type": "string"
+          },
+          {
+            "name": "edad",
+            "type": "i8"
+          },
+          {
+            "name": "destino",
+            "type": "string"
+          },
+          {
+            "name": "upp",
+            "type": "string"
+          },
+          {
+            "name": "psg",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "u8"
+          },
+          {
+            "name": "month",
+            "type": "u8"
+          },
+          {
+            "name": "day",
+            "type": "u8"
+          },
+          {
+            "name": "hour",
+            "type": "u8"
+          },
+          {
+            "name": "minutes",
+            "type": "u8"
+          },
+          {
+            "name": "seconds",
+            "type": "u8"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "OrigenTooLong",
+      "msg": "Origen debde tener maximo 15 caracteres."
+    },
+    {
+      "code": 6001,
+      "name": "ProductorTooLong",
+      "msg": "El productor debe tener maximo 25 caracteres."
+    },
+    {
+      "code": 6002,
+      "name": "SiniigaTooLong",
+      "msg": "El SINIIGA es de 10 caracteres."
+    },
+    {
+      "code": 6003,
+      "name": "ReemoTooLong",
+      "msg": "El REEMO debe tener maximo 90 caracteres."
+    },
+    {
+      "code": 6004,
+      "name": "EdadTooLong",
+      "msg": "la edad debe tener maximo 2 caracteres."
+    },
+    {
+      "code": 6005,
+      "name": "DestinoTooLong",
+      "msg": "El destino debe tener maximo 15 caracteres."
+    },
+    {
+      "code": 6006,
+      "name": "UppTooLong",
+      "msg": "El UPP debe tener maximo 12 caracteres."
+    },
+    {
+      "code": 6007,
+      "name": "PsgTooLong",
+      "msg": "El PSG debe tener maximo 12 caracteres."
+    }
+  ],
+  "metadata": {
+    "address": "6c2RKWQMZ3SgmByGjDj6fhnbiUGdY3gJjQaqYcawTsEv"
+  }
+}
